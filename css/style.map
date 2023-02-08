@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../sass/style.sass"
+	],
+	"sourcesContent": [
+		"//variables\n$color-fondo: rgb(194, 194, 247);\n$color-letra: red;\n$color-1: blue;\n\n$fuente-normal: 1em;\n$fuente-pequena: 0.8em;\n$fuente-grande: 1.4em;\n\n$tipografia-general: arial, verdana, sans-serif;\n\n//mixins\n@mixin titulo {\n    color: $color-letra;\n    text-align: center;\n    font-family: $tipografia-general; }\n\n@mixin caja {\n    background-color: white;\n    width: 200px;\n    height: 100px;\n    padding: 10px;\n    margin-left: 20%; }\n\n\n\n\nbody {\n    background-color: $color-fondo; }\n\nh1 {\n    @include titulo;\n    font-size: $fuente-grande; }\nh2 {\n    @include titulo;\n    font-size: $fuente-normal; }\n\nh3 {\n    @include titulo;\n    font-size: $fuente-pequena; }\n\n.cuadrado-1 {\n    @include caja; }\n"
+	],
+	"names": [],
+	"mappings": ";AA2BA,AAAA,IAAI,CAAC;EACD,gBAAgB,EA3BN,OAAkB;CA2BK;;;AAErC,AAAA,EAAE,CAAC;EAjBC,KAAK,EAXK,GAAG;EAYb,UAAU,EAAE,MAAM;EAClB,WAAW,EANM,KAAK,EAAE,OAAO,EAAE,UAAU;EAuB3C,SAAS,EAzBG,KAAK;CAyBW;;;AAChC,AAAA,EAAE,CAAC;EApBC,KAAK,EAXK,GAAG;EAYb,UAAU,EAAE,MAAM;EAClB,WAAW,EANM,KAAK,EAAE,OAAO,EAAE,UAAU;EA0B3C,SAAS,EA9BG,GAAG;CA8Ba;;;AAEhC,AAAA,EAAE,CAAC;EAxBC,KAAK,EAXK,GAAG;EAYb,UAAU,EAAE,MAAM;EAClB,WAAW,EANM,KAAK,EAAE,OAAO,EAAE,UAAU;EA8B3C,SAAS,EAjCI,KAAK;CAiCW;;;AAEjC,AAAA,WAAW,CAAC;EAvBR,gBAAgB,EAAE,KAAK;EACvB,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,GAAG;CAoBA"
+}

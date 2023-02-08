@@ -1,0 +1,39 @@
+/* line 28, ../Proyecto-Sass/sass/style.sass */
+body {
+  background-color: #c2c2f7;
+}
+
+/* line 31, ../Proyecto-Sass/sass/style.sass */
+h1 {
+  color: red;
+  text-align: center;
+  font-family: arial, verdana, sans-serif;
+  font-size: 1.4em;
+}
+
+/* line 34, ../Proyecto-Sass/sass/style.sass */
+h2 {
+  color: red;
+  text-align: center;
+  font-family: arial, verdana, sans-serif;
+  font-size: 1em;
+}
+
+/* line 38, ../Proyecto-Sass/sass/style.sass */
+h3 {
+  color: red;
+  text-align: center;
+  font-family: arial, verdana, sans-serif;
+  font-size: 0.8em;
+}
+
+/* line 42, ../Proyecto-Sass/sass/style.sass */
+.cuadrado-1 {
+  background-color: white;
+  width: 200px;
+  height: 100px;
+  padding: 10px;
+  margin-left: 20%;
+}
+
+/*# sourceMappingURL=style.css.map */
