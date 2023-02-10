@@ -1,0 +1,133 @@
+//variables
+$primary-color: #333;
+$secondary-color: #777;
+$fuente-normal: 1.9em;
+$fuente-pequena: 0.8em;
+$fuente-grande: 1.4em;
+
+//mixins
+@mixin clearfix() {
+    &::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  }
+  
+@mixin text-center {
+    text-align: center;
+}
+  
+@mixin button($background-color, $color) {
+    background-color: $background-color;
+    color: $color;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+@mixin image-style($width, $height) {
+    width: $width;
+    height: $height;   
+}
+@mixin agrandar-img{
+    .zoom {
+        transition: transform .2s; 
+    }
+     
+    .zoom:hover {
+        transform: scale(1.2); 
+    }
+}
+//bucles
+
+  @for $i from 1 through 5 {
+    .card-#{$i} {
+      width: 200px;
+      height: 200px;
+      background-color: hsl(60 * $i, 100%, 50%);
+      float: left;
+      margin-right: 20px;
+    }
+  }
+
+
+  
+  
+  header {
+    background-color: $primary-color;
+    padding: 20px;
+    @include text-center;
+    h1 {
+      color: white;
+      margin: 0;
+    }
+  }
+nav {
+    background-color: $secondary-color;
+    
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+      li {
+        margin-left: 10%;
+        a {
+          display: block;
+          padding: 20px;
+          @include button($primary-color, white);
+
+          &:hover {
+            background-color: $primary-color;
+          }
+        }
+      }
+      @include clearfix;
+    }
+  }
+  
+  main {
+    padding: 20px;
+    @include text-center;
+    h2 {
+      margin: 0;
+      $fuente-grande: 1.4em;
+    }
+    .p2{
+        $fuente-normal: 1.4em;
+    }
+    .p3{
+        $fuente-pequena: 1.4em;
+    }
+    .container{
+        margin-left: 20%
+    }
+    .zoom {
+        transition: transform .2s; 
+    }
+     
+    .zoom:hover {
+        transform: scale(1.2); 
+    }
+    .img1,
+    .img2,
+    .img3,
+    .img4,
+    .img5 {
+        @include image-style(200px, 200px);     
+  }
+  }
+
+  button {
+    @include button($primary-color, white);
+  }
+  footer {
+    background-color: $secondary-color;
+    margin-top: 26%;
+    padding: 20px;
+    color: white;
+    text-align: center;
+  }
