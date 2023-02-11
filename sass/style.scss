@@ -1,6 +1,6 @@
 //variables
 $primary-color: #333;
-$secondary-color: #777;
+$secondary-color: rgb(253, 10, 10);
 $fuente-normal: 1.9em;
 $fuente-pequena: 0.8em;
 $fuente-grande: 1.4em;
@@ -32,18 +32,15 @@ $fuente-grande: 1.4em;
     width: $width;
     height: $height;   
 }
-@mixin agrandar-img{
-    .zoom {
-        transition: transform .2s; 
-    }
-     
-    .zoom:hover {
-        transform: scale(1.2); 
-    }
+@mixin imagen-fondo{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 //bucles
 
-  @for $i from 1 through 5 {
+  @for $i from 1 through 4 {
     .card-#{$i} {
       width: 200px;
       height: 200px;
@@ -52,21 +49,30 @@ $fuente-grande: 1.4em;
       margin-right: 20px;
     }
   }
-
-
-  
+body{
+  background-image: url("../img/fondo.jpg");
+  @include imagen-fondo();
+}
+.container{
+  margin-left: 20%;
+} 
   
   header {
-    background-color: $primary-color;
+    background-image: url("../img/fondo.jpg");
+    @include imagen-fondo();
     padding: 20px;
     @include text-center;
     h1 {
-      color: white;
+      color: $secondary-color;
       margin: 0;
     }
   }
 nav {
-    background-color: $secondary-color;
+  background-image: url("../img/fondo.jpg");
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     
     ul {
       list-style: none;
@@ -74,7 +80,7 @@ nav {
       justify-content: space-between;
       padding: 0;
       li {
-        margin-left: 10%;
+        margin-left: 15%;
         a {
           display: block;
           padding: 20px;
@@ -88,22 +94,44 @@ nav {
       @include clearfix;
     }
   }
+  .texto{
+    color: white;
+  }
+  .container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    background-color: #eee;
+    
   
+    .box {
+      width: 30%;
+      height: 80%;
+      color:#ffffff;
+      background-color: #ddd;
+    }
+  }
   main {
     padding: 20px;
     @include text-center;
     h2 {
+      color: rgb(255, 0, 0);
       margin: 0;
-      $fuente-grande: 1.4em;
+      $fuente-grande: 1.4em; 
     }
+    h2:hover{
+      color:#ffffff
+   }
     .p2{
         $fuente-normal: 1.4em;
+        color: white;
+
     }
+
     .p3{
         $fuente-pequena: 1.4em;
-    }
-    .container{
-        margin-left: 20%
+        color: white;
     }
     .zoom {
         transition: transform .2s; 
@@ -116,7 +144,8 @@ nav {
     .img2,
     .img3,
     .img4,
-    .img5 {
+    .img5,
+    .img6 {
         @include image-style(200px, 200px);     
   }
   }
@@ -124,10 +153,51 @@ nav {
   button {
     @include button($primary-color, white);
   }
-  footer {
-    background-color: $secondary-color;
-    margin-top: 26%;
-    padding: 20px;
+  $genre-colors: (
+  action: #f44336,
+  comedy: #4caf50,
+  drama: #2196f3,
+  romance: #ffc107,
+  thriller: #9c27b0
+);
+
+@each $genre, $color in $genre-colors {
+  .genre-#{$genre} {
+    background-color: $color;
+    padding: 10px;
     color: white;
-    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
   }
+}
+.genre-action {
+  background-color: #f44336;
+  padding: 10px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.genre-action:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.genre-comedy {
+  background-color: #4caf50;
+  padding: 10px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.genre-comedy:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+ 

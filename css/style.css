@@ -1,1 +1,307 @@
-.card-1{width:200px;height:200px;background-color:#ff0;float:left;margin-right:20px}.card-2{width:200px;height:200px;background-color:lime;float:left;margin-right:20px}.card-3{width:200px;height:200px;background-color:cyan;float:left;margin-right:20px}.card-4{width:200px;height:200px;background-color:blue;float:left;margin-right:20px}.card-5{width:200px;height:200px;background-color:#f0f;float:left;margin-right:20px}header{background-color:#333;padding:20px;text-align:center}header h1{color:white;margin:0}nav{background-color:#777}nav ul{list-style:none;display:flex;justify-content:space-between;padding:0}nav ul li{margin-left:10%}nav ul li a{display:block;padding:20px;background-color:#333;color:#fff;border:none;border-radius:5px;padding:10px 20px}nav ul li a:hover{cursor:pointer}nav ul li a:hover{background-color:#333}nav ul::after{content:"";clear:both;display:table}main{padding:20px;text-align:center}main h2{margin:0}main .container{margin-left:20%}main .zoom{transition:transform .2s}main .zoom:hover{transform:scale(1.2)}main .img1,main .img2,main .img3,main .img4,main .img5{width:200px;height:200px}button{background-color:#333;color:#fff;border:none;border-radius:5px;padding:10px 20px}button:hover{cursor:pointer}footer{background-color:#777;margin-top:26%;padding:20px;color:white;text-align:center}
+/* line 44, C:/Users/pepe1/OneDrive/Escritorio/Proyecto-Sass/sass/style.scss */
+.card-1 {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  float: left;
+  margin-right: 20px;
+}
+
+/* line 44, C:/Users/pepe1/OneDrive/Escritorio/Proyecto-Sass/sass/style.scss */
+.card-2 {
+  width: 200px;
+  height: 200px;
+  background-color: lime;
+  float: left;
+  margin-right: 20px;
+}
+
+/* line 44, C:/Users/pepe1/OneDrive/Escritorio/Proyecto-Sass/sass/style.scss */
+.card-3 {
+  width: 200px;
+  height: 200px;
+  background-color: cyan;
+  float: left;
+  margin-right: 20px;
+}
+
+/* line 44, C:/Users/pepe1/OneDrive/Escritorio/Proyecto-Sass/sass/style.scss */
+.card-4 {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  float: left;
+  margin-right: 20px;
+}
+
+/* line 52, C:/Users/pepe1/OneDrive/Escritorio/Proyecto-Sass/sass/style.scss */
+body {
+  background-image: url("../img/fondo.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 56, C:/Users/pepe1/OneDrive/Escritorio/Proyecto-Sass/sass/style.scss */
+.container {
+  margin-left: 20%;
+}
+
+/* line 60, C:/Users/pepe1/OneDrive/Escritorio/Proyecto-Sass/sass/style.scss */
+header {
+  background-image: url("../img/fondo.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  text-align: center;
+}
+
+/* line 65, C:/Users/pepe1/OneDrive/Escritorio/Proyecto-Sass/sass/style.scss */
+header h1 {
+  color: #fd0a0a;
+  margin: 0;
+}
+
+/* line 70, C:/Users/pepe1/OneDrive/Escritorio/Proyecto-Sass/sass/style.scss */
+nav {
+  background-image: url("../img/fondo.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 77, C:/Users/pepe1/OneDrive/Escritorio/Proyecto-Sass/sass/style.scss */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+/* line 82, C:/Users/pepe1/OneDrive/Escritorio/Proyecto-Sass/sass/style.scss */
+nav ul li {
+  margin-left: 15%;
+}
+
+/* line 84, C:/Users/pepe1/OneDrive/Escritorio/Proyecto-Sass/sass/style.scss */
+nav ul li a {
+  display: block;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+/* line 27, C:/Users/pepe1/OneDrive/Escritorio/Proyecto-Sass/sass/style.scss */
+nav ul li a:hover {
+  cursor: pointer;
+}
+
+/* line 89, C:/Users/pepe1/OneDrive/Escritorio/Proyecto-Sass/sass/style.scss */
+nav ul li a:hover {
+  background-color: #333;
+}
+
+/* line 10, C:/Users/pepe1/OneDrive/Escritorio/Proyecto-Sass/sass/style.scss */
+nav ul::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* line 97, C:/Users/pepe1/OneDrive/Escritorio/Proyecto-Sass/sass/style.scss */
+.texto {
+  color: white;
+}
+
+/* line 100, C:/Users/pepe1/OneDrive/Escritorio/Proyecto-Sass/sass/style.scss */
+.container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+  background-color: #eee;
+}
+
+/* line 108, C:/Users/pepe1/OneDrive/Escritorio/Proyecto-Sass/sass/style.scss */
+.container1 .box {
+  width: 30%;
+  height: 80%;
+  color: #ffffff;
+  background-color: #ddd;
+}
+
+/* line 115, C:/Users/pepe1/OneDrive/Escritorio/Proyecto-Sass/sass/style.scss */
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+/* line 118, C:/Users/pepe1/OneDrive/Escritorio/Proyecto-Sass/sass/style.scss */
+main h2 {
+  color: red;
+  margin: 0;
+}
+
+/* line 123, C:/Users/pepe1/OneDrive/Escritorio/Proyecto-Sass/sass/style.scss */
+main h2:hover {
+  color: #ffffff;
+}
+
+/* line 126, C:/Users/pepe1/OneDrive/Escritorio/Proyecto-Sass/sass/style.scss */
+main .p2 {
+  color: white;
+}
+
+/* line 132, C:/Users/pepe1/OneDrive/Escritorio/Proyecto-Sass/sass/style.scss */
+main .p3 {
+  color: white;
+}
+
+/* line 136, C:/Users/pepe1/OneDrive/Escritorio/Proyecto-Sass/sass/style.scss */
+main .zoom {
+  transition: transform .2s;
+}
+
+/* line 140, C:/Users/pepe1/OneDrive/Escritorio/Proyecto-Sass/sass/style.scss */
+main .zoom:hover {
+  transform: scale(1.2);
+}
+
+/* line 143, C:/Users/pepe1/OneDrive/Escritorio/Proyecto-Sass/sass/style.scss */
+main .img1,
+main .img2,
+main .img3,
+main .img4,
+main .img5,
+main .img6 {
+  width: 200px;
+  height: 200px;
+}
+
+/* line 153, C:/Users/pepe1/OneDrive/Escritorio/Proyecto-Sass/sass/style.scss */
+button {
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+/* line 27, C:/Users/pepe1/OneDrive/Escritorio/Proyecto-Sass/sass/style.scss */
+button:hover {
+  cursor: pointer;
+}
+
+/* line 165, C:/Users/pepe1/OneDrive/Escritorio/Proyecto-Sass/sass/style.scss */
+.genre-action {
+  background-color: #f44336;
+  padding: 10px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* line 172, C:/Users/pepe1/OneDrive/Escritorio/Proyecto-Sass/sass/style.scss */
+.genre-action:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* line 165, C:/Users/pepe1/OneDrive/Escritorio/Proyecto-Sass/sass/style.scss */
+.genre-comedy {
+  background-color: #4caf50;
+  padding: 10px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* line 172, C:/Users/pepe1/OneDrive/Escritorio/Proyecto-Sass/sass/style.scss */
+.genre-comedy:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* line 165, C:/Users/pepe1/OneDrive/Escritorio/Proyecto-Sass/sass/style.scss */
+.genre-drama {
+  background-color: #2196f3;
+  padding: 10px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* line 172, C:/Users/pepe1/OneDrive/Escritorio/Proyecto-Sass/sass/style.scss */
+.genre-drama:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* line 165, C:/Users/pepe1/OneDrive/Escritorio/Proyecto-Sass/sass/style.scss */
+.genre-romance {
+  background-color: #ffc107;
+  padding: 10px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* line 172, C:/Users/pepe1/OneDrive/Escritorio/Proyecto-Sass/sass/style.scss */
+.genre-romance:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* line 165, C:/Users/pepe1/OneDrive/Escritorio/Proyecto-Sass/sass/style.scss */
+.genre-thriller {
+  background-color: #9c27b0;
+  padding: 10px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* line 172, C:/Users/pepe1/OneDrive/Escritorio/Proyecto-Sass/sass/style.scss */
+.genre-thriller:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* line 178, C:/Users/pepe1/OneDrive/Escritorio/Proyecto-Sass/sass/style.scss */
+.genre-action {
+  background-color: #f44336;
+  padding: 10px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* line 186, C:/Users/pepe1/OneDrive/Escritorio/Proyecto-Sass/sass/style.scss */
+.genre-action:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* line 191, C:/Users/pepe1/OneDrive/Escritorio/Proyecto-Sass/sass/style.scss */
+.genre-comedy {
+  background-color: #4caf50;
+  padding: 10px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* line 199, C:/Users/pepe1/OneDrive/Escritorio/Proyecto-Sass/sass/style.scss */
+.genre-comedy:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/*# sourceMappingURL=style.css.map */
